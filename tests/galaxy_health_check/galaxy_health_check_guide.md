@@ -93,7 +93,7 @@ bash tests/galaxy_health_check/run_all.sh
   ```bash
   # 测试全量卡
   pytest tests/galaxy_health_check/test_all_cards.py -v
-  
+
   # 定向测试某张卡（如 device_id-5）
   pytest tests/galaxy_health_check/test_all_cards.py -v -k "device_id-5"
   ```
@@ -145,7 +145,7 @@ bash tests/galaxy_health_check/run_all.sh
   ```bash
   # 运行完整的 CCL AllGather 测试
   pytest tests/galaxy_health_check/test_ccl_all_gather.py -v
-  
+
   # 分别过滤行、列方向测试
   pytest tests/galaxy_health_check/test_ccl_all_gather.py -k TestAllGatherAxis1Ring -v
   pytest tests/galaxy_health_check/test_ccl_all_gather.py -k TestAllGatherAxis0Linear -v
